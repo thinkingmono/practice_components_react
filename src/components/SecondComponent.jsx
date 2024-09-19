@@ -10,14 +10,17 @@ const SecondComponent = () => {
     'Harry Potter y las reliquias de la muerte',
   ]
   return (
-    <div className="container text-start bg-warning-subtle p-3 my-4">
-      <h3>Saga Harry Potter</h3>
-      <ul>
-        {books.map((book, index) => {
-          return <li key={index}>{book}</li>
-        })}
-      </ul>
-    </div>
+    <>
+      <h1>SecondComponent</h1>
+      <div>
+        <h1>Saga Harry Potter</h1>
+        <ul>
+          {books.map((book, index) => {
+            return <li key={index}>{book}</li>
+          })}
+        </ul>
+      </div>
+    </>
   )
 }
 

@@ -14,8 +14,9 @@ const MyFirstComponent = () => {
 
   return (
     <>
-      <div className='container bg-primary-subtle p-3 my-4 text-start'>
-        <h3>Temas React</h3>
+      <div>MyFirstComponent</div>
+      <div className='container mt-4'>
+        <h1>Temas React</h1>
         <ul>
           <li>Componentes</li>
           <li>Eventos</li>
@@ -24,21 +25,21 @@ const MyFirstComponent = () => {
           <li>Props</li>
         </ul>
       </div>
-      <div className='container bg-success-subtle p-3 my-4 text-start'>
-        <h3>Datos del Docente</h3>
+      <div className='container py-2'>
+        <h1>Datos del Docente</h1>
         <p><strong>Nombre:</strong> {name}</p>
         <p><strong>Github:</strong> {githubProfile}</p>
       </div>
-      <div className='container bg-danger-subtle p-3 my-4 text-start'>
-        <h3>Datos del Estudiante</h3>
+      <div className='container py-2'>
+        <h1>Datos del Estudiante</h1>
         <p><strong>Nombre:</strong> {student.name}</p>
         <p><strong>Apellido:</strong> {student.lastName}</p>
         <p><strong>Mobile:</strong> {student.mobile}</p>
         <p><strong>LinkedIn:</strong> <a href={student.linkedInProfile} target='_blank'>{student.linkedInProfile}</a></p>
       </div>
-      <div className='container bg-secondary-subtle p-3 my-4 text-start'>
-        <h3>Objeto</h3>
-        <p>{JSON.stringify(student)}</p>
+      <div className='container mt-2 pt-2'>
+        <h1>Objeto</h1>
+        <pre>{JSON.stringify(student)}</pre>
       </div>
     </>
   )
