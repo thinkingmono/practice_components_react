@@ -13,11 +13,10 @@ const SecondComponent = () => {
     <>
       <h1>SecondComponent</h1>
       <div>
-        <h1>Saga Harry Potter</h1>
         <ul>
-          {books.map((book, index) => {
+          {books.length >= 1 ? books.map((book, index) => {
             return <li key={index}>{book}</li>
-          })}
+          }) : <h2>There are no books available</h2>}
         </ul>
       </div>
     </>
